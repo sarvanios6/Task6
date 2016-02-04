@@ -19,32 +19,21 @@ public class Publisher_subscriber {
 		String current_date;
 
 		Scanner scanInput = new Scanner(System.in);
-		data= scanInput.nextLine();
-		scanInput.close();       
+		data = scanInput.nextLine(); //scanned input text
+		scanInput.close();
 		
-		DateFormat formatter = new SimpleDateFormat("MM/dd/yy h:mm a");
+		//DateFormat formatter = new SimpleDateFormat("MM/dd/yy h:mm a");//
 		//Date date = (Date)formatter.parse(date);
 		
 		
-		 current_date= new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime());
+		current_date = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime());
 
 		
 		if(data!=null)
 		{
 		
-		//System.out.println(data);
-		
-		
 		System.out.println("Message from Subscriber: "+data+ "\n Message Recived on : " +current_date);
 		 
 		}
-        
-	    
-		
-		
-		
-		
 		}
-
-
 }
